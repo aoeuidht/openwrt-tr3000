@@ -1,13 +1,11 @@
 diff --git a/target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1.dts b/target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1.dts
-index 86d8e857f1..c319e13c67 100644
+index d65e2352b74a..a29b18117c6b 100644
 --- a/target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1.dts
 +++ b/target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1.dts
-@@ -196,7 +196,7 @@
+@@ -22,5 +22,5 @@
+ };
  
- 			partition@5c0000 {
- 				label = "ubi";
--				reg = <0x5c0000 0x4000000>;
-+				reg = <0x5c0000 0x7000000>;
- 				compatible = "linux,ubi";
- 			};
- 		};
+ &ubi {
+-	reg = <0x5c0000 0x4000000>;
++	reg = <0x5c0000 0x7000000>;
+ };
